@@ -45,7 +45,7 @@ class ScreenHome extends StatelessWidget {
                     controller: _textController,
                     decoration: InputDecoration(
                       border: OutlineInputBorder(),
-                      hintText: 'Type Something....'
+                      hintText: 'Type Something here....'
                     ),
                   ),
                   ElevatedButton(
