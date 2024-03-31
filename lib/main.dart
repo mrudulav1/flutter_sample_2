@@ -24,6 +24,8 @@ class ScreenHome extends StatelessWidget {
 
     final _textController= TextEditingController();
 
+    String _displayText='text will be displayed here..';
+
 
   @override
   Widget build(BuildContext context) {
@@ -52,10 +54,11 @@ class ScreenHome extends StatelessWidget {
                     onPressed: () {
                       //get data
                       print(_textController.text);
+                      _displayText=_textController.text;
                     },
                     child: Text('Click here'),
                   ),
-                  Text('Data Will Be Shown here'),
+                  Text(_displayText),
                 ],
               ),
             ),
