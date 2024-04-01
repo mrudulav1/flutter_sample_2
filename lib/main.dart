@@ -18,14 +18,17 @@ class myApp extends StatelessWidget {
   }
 }
 
-class ScreenHome extends StatelessWidget {
+class ScreenHome extends StatefulWidget {
    ScreenHome({super.key});
 
+  @override
+  State<ScreenHome> createState() => _ScreenHomeState();
+}
 
+class _ScreenHomeState extends State<ScreenHome> {
     final _textController= TextEditingController();
 
     String _displayText='text will be displayed here..';
-
 
   @override
   Widget build(BuildContext context) {
