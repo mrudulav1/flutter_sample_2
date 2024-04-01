@@ -57,7 +57,10 @@ class _ScreenHomeState extends State<ScreenHome> {
                     onPressed: () {
                       //get data
                       print(_textController.text);
-                      _displayText=_textController.text;
+                      setState(() {
+                        _displayText=_textController.text;
+                      });
+                      
                     },
                     child: Text('Click here'),
                   ),
